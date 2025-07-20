@@ -19,15 +19,15 @@ for ((i = 1; i <= sessions; i++)); do
   echo "✅ Deep work session $i complete."
 
   if (( i < sessions )); then
-    echo "☕ Short break time (5 seconds)..."
-    sleep 5
+    if (( i % 3 == 0 )); then
+      echo "🛌 Long break time (30 seconds)..."
+      sleep 30
+    else
+      echo "☕ Short break time (5 seconds)..."
+      sleep 5
+    fi
   fi
 done
 
-if (( sessions > 4 )); then
-  echo ""
-  echo "🎉 You've done $sessions sessions! Enjoy a long break (30 seconds)..."
-  sleep 30
-fi
-
-echo "✅ All sessions complete. Good job!"
+echo ""
+echo "🎉 All $sessions sessions complete. Great job!"

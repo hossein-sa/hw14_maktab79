@@ -15,9 +15,13 @@ A command-line ToDo task manager with the following features:
 
 ### `pomodoro.sh`
 A Pomodoro-style deep work timer:
-- User inputs number of sessions
-- Each session: 10 seconds of "work", 5 seconds of "short break"
-- If sessions > 4, a final long break of 30 seconds is added
+- User inputs number of deep work sessions
+- Each session is 10 seconds long
+- After each session (except the last one):
+  - A **5-second short break** is given by default
+  - **Every 3rd session**, a **30-second long break** replaces the short one  
+    (e.g., after 3rd, 6th, 9th session, etc.)
+- All timing is simulated with `sleep` and works in terminal
 
 ### `file_menu.sh`
 A menu-based Bash script with 3 options:
@@ -38,10 +42,6 @@ hw14_todo_project/
 ├── file_menu.sh
 └── README.md
 ```
-
-## 🔗 GitHub Repository
-
-[https://github.com/hossein-sa/hw14_maktab79](https://github.com/hossein-sa/hw14_maktab79)
 
 ## ▶️ How to Run
 
