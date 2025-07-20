@@ -1,0 +1,2 @@
+2025-07-20 10:57:58 | Priority: 2 | Finish HW14 bash script
+2025-07-20 11:37:12 | 2 | pending | Sport machen
